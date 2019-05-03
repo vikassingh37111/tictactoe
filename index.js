@@ -233,7 +233,10 @@ function onBoxClick() {
     grid[colIdx][rowIdx] = newValue;
     renderMainGrid();
     // Check if Game Over after the player moves
-    checkGameOver();
+    // BUGFIX 1- Also return this function so it doesnt execute further computer moves
+    if(checkGameOver()){
+        return;
+    }
 
     //Computer moves    
     amateurLevelComputerMove();
