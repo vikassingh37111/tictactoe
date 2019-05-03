@@ -17,6 +17,14 @@
 * 
 */
 
+/*
+    Developer comments: 
+    I havent touched the computer-move algorithm part because of the time constraint. 
+    There we can write an algorithm where the computer move is perfect everytime given 
+    any number (N) for the box width.
+    We can recursively find all the possible future moves where the "computer wins for sure" or its "a draw". 
+*/
+
 const grid = [];
 const GRID_LENGTH = 3;
 let turn = 'X';
